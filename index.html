@@ -6,7 +6,7 @@
     <title>Wattpad - Where stories live</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="overflow-scroll">
+  <body class="overflow-y-scroll">
     <!-- navigation bar -->
     <header
       class="flex w-full items-center justify-between px-6 py-3 shadow-sm"
@@ -36,24 +36,28 @@
           action=""
           class="flex items-center gap-2 rounded-md border border-gray-200 px-2 py-2"
         >
-          <button>
+          <button class="group text-gray-400 hover:text-[#cd4008]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
               height="15"
               viewBox="0 0 15 15"
-              fill="none"
+              fill="currentColor"
+              class="transition-colors"
             >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M1.5999 6.49844C1.5999 3.79224 3.79371 1.59844 6.4999 1.59844C9.2061 1.59844 11.3999 3.79224 11.3999 6.49844C11.3999 9.20463 9.2061 11.3984 6.4999 11.3984C3.79371 11.3984 1.5999 9.20463 1.5999 6.49844ZM6.4999 0.398438C3.13097 0.398438 0.399902 3.1295 0.399902 6.49844C0.399902 9.86737 3.13097 12.5984 6.4999 12.5984C7.99441 12.5984 9.36338 12.061 10.4241 11.1688C10.4515 11.2618 10.5019 11.3494 10.5752 11.4227L13.0501 13.8976C13.2844 14.1319 13.6643 14.1319 13.8986 13.8976C14.133 13.6633 14.133 13.2834 13.8986 13.0491L11.4238 10.5742C11.3504 10.5008 11.2629 10.4505 11.1699 10.423C12.0623 9.36227 12.5999 7.99313 12.5999 6.49844C12.5999 3.1295 9.86884 0.398438 6.4999 0.398438Z"
-                fill="#121212"
-                fill-opacity="0.64"
+                stroke="currentColor"
               ></path>
             </svg>
           </button>
-          <input type="text" class="w-64 outline-none" placeholder="Search" />
+          <input
+            type="text"
+            class="w-[18rem] py-1 outline-none"
+            placeholder="Search"
+          />
         </form>
       </div>
       <div class="flex items-center gap-4 font-medium">
@@ -85,9 +89,8 @@
     </header>
 
     <!-- first container -->
-    <!--  -->
     <div
-      class="bg-[url('https://www.wattpad.com/wp-web-assets/build/_assets/topRightPortal-QF27QM47.svg')] bg-contain bg-right bg-no-repeat pt-28 pb-4"
+      class="bg-[url('https://www.wattpad.com/wp-web-assets/build/_assets/topRightPortal-QF27QM47.svg')] bg-contain bg-right bg-no-repeat pb-4 pt-28"
     >
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-4">
         <div class="flex flex-1 flex-col">
@@ -105,7 +108,7 @@
           <p class="text-xs text-[#6f6f6f]">
             ¹As of the quarter ended June 30, 2024
           </p>
-          <div class="mt-12 mb-32 flex gap-4">
+          <div class="mb-32 mt-12 flex gap-4">
             <button
               class="rounded-md bg-[#ff6122] px-10 py-3 font-medium text-white hover:bg-[#ff4f08]"
             >
@@ -123,6 +126,123 @@
             src="https://www.wattpad.com/wp-web-assets/images/landing/hero-devices.png"
             alt=""
           />
+        </div>
+      </div>
+    </div>
+    <!-- second container -->
+    <div
+      class="bg-[url('https://www.wattpad.com/wp-web-assets/build/_assets/bottomLeftPortal-PDZA4EYD.svg')] bg-contain bg-left bg-no-repeat pt-16"
+    >
+      <div class="mx-auto max-w-4xl">
+        <h2 class="mb-12 text-center text-2xl font-bold">See Your Story...</h2>
+        <div class="flex items-center justify-between">
+          <div class="flex flex-1 flex-col items-center gap-2">
+            <img
+              src="https://www.wattpad.com/wp-web-assets/images/landing/tv-icon.svg"
+              alt=""
+              class="size-6"
+            />
+            <p class="text-md font-medium">Get produced to movie or film</p>
+          </div>
+          <div class="flex flex-1 flex-col items-center gap-2">
+            <img
+              src="https://www.wattpad.com/wp-web-assets/images/landing/reel-icon.svg"
+              alt=""
+              class="size-6"
+            />
+            <p class="text-md font-medium">Get adapted to a TV series</p>
+          </div>
+          <div class="flex flex-1 flex-col items-center gap-2">
+            <img
+              src="https://www.wattpad.com/wp-web-assets/images/landing/book-icon.svg"
+              alt=""
+              class="size-6"
+            />
+            <p class="text-md font-medium">Get published</p>
+          </div>
+        </div>
+        <div class="flex pt-24">
+          <img
+            src="https://www.wattpad.com/wp-web-assets/images/landing/wattpadStudiosPoster.png"
+            alt=""
+            class="max-w-md"
+          />
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://www.wattpad.com/wp-web-assets/images/landing/wattpadStudiosLogo.svg"
+              alt=""
+              class="w-48"
+            />
+            <h2 class="text-[1.35rem] font-bold">
+              Your original story could be the next big hit
+            </h2>
+            <h3 class="text-[#6f6f6f]">
+              Wattpad Studios discovers untapped, unsigned, and talented writers
+              on Wattpad and connects them to global multi-media entertainment
+              companies.
+            </h3>
+            <h4 class="text-[#6f6f6f]">
+              Wattpad Studios works with partners such as:
+            </h4>
+            <div class="flex gap-12">
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/sony.svg"
+                alt=""
+              />
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/hulu.svg"
+                alt=""
+              />
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/syfy.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto max-w-4xl">
+        <div class="flex flex-row-reverse gap-12 pt-24 text-right">
+          <img
+            src="https://www.wattpad.com/wp-web-assets/images/landing/wattpadBooksPoster.png"
+            alt=""
+            class="max-w-xs"
+          />
+          <div class="flex flex-col gap-4">
+            <img
+              src="https://www.wattpad.com/wp-web-assets/images/landing/wattpadStudiosLogo.svg"
+              alt=""
+              class="ml-auto w-48"
+            />
+            <h2 class="text-[1.35rem] font-bold">
+              Your voice belongs on bookshelves
+            </h2>
+            <h3 class="text-[#6f6f6f]">
+              Wattpad Books aspires to recognize and reflect diverse voices by
+              taking Wattpad stories to published book and onto bookshelves
+              around the world.
+            </h3>
+            <h4 class="text-[#6f6f6f]">
+              Wattpad Books works with partners such as:
+            </h4>
+            <div class="flex justify-end gap-12">
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/macmillan.png"
+                alt=""
+                class="max-w-24 object-contain"
+              />
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/anvil.png"
+                alt=""
+                class="max-w-24 object-contain"
+              />
+              <img
+                src="https://www.wattpad.com/wp-web-assets/images/landing/penguin.png"
+                alt=""
+                class="max-w-24 object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
